@@ -8,12 +8,43 @@
 body {
     font-family: "Inter", sans-serif;
     color: white;
+    background-color: black;
+}
+
+/* shared styles */
+.text-primary {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-secondary {}
+
+.btn-primary {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 42px;
+    border: 0;
+    color: white;
+    background: rgb(230, 83, 60);
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 42px;
+    background-color: black;
+    color: white;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    cursor: pointer;
+    margin-left: 15px;
 }
 
 /* header styles */
 .header {
-    height: 500px;
-    background-color: black;
     padding: 50px 190px;
 }
 
@@ -43,6 +74,7 @@ body {
 .ul-container>li>a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-size: 1.1rem;
 }
 
 .link-active {
@@ -57,7 +89,78 @@ body {
     height: 24px;
 }
 
+/* banner styles */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+}
 
+.banner-title {
+    font-size: 78px;
+    font-weight: 900;
+    margin-bottom: 28px;
+    margin-top: 90px;
+}
+
+.special-text {
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.banner-des {
+    margin-bottom: 28px;
+}
+
+.banner-img-container {
+    margin-top: 32px;
+    position: relative;
+}
+
+.banner-img {
+    margin-top: 32px;
+}
+
+.videos {
+    position: absolute;
+    top: 160px;
+    right: -80px;
+    padding: 16px 24px;
+    max-width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.videos-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.first-tutorial {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
+}
+
+.tutorial {
+    position: absolute;
+    bottom: 60px;
+    left: -100px;
+    padding: 16px 24px;
+    max-width: 190px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 /* responsive small device */
 @media screen and (max-width: 576px) {
@@ -71,5 +174,20 @@ body {
 
     .bars-icon {
         display: block;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videos {
+        top: 0px;
+        right: 0px;
+    }
+
+    .tutorial {
+        bottom: 0px;
+        left: 0px;
     }
 }
