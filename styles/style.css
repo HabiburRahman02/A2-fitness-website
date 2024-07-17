@@ -210,6 +210,38 @@ main section {
     font-size: 14px;
 }
 
+/* extra styles */
+.extra {
+    display: flex;
+    align-items: center;
+    gap: 165px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 40px 54px;
+}
+
+.extra-content {}
+
+.extra-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.extra-des {
+    margin-bottom: 34px;
+}
+
+.btn-join-now {
+    padding: 20px 80px;
+}
+
+.extra-img {
+    max-width: 366px;
+    height: 312px;
+    object-fit: cover;
+    border-radius: 18px;
+}
 
 
 
@@ -252,5 +284,9 @@ main section {
 
     .habits-cards-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .extra {
+        flex-direction: column;
     }
 }
