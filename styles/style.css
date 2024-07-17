@@ -237,7 +237,7 @@ main section {
 }
 
 .extra-img {
-    max-width: 366px;
+    max-width: 350px;
     height: 312px;
     object-fit: cover;
     border-radius: 18px;
@@ -322,6 +322,7 @@ main section {
 
     .extra {
         flex-direction: column;
+        padding: 0 20px;
     }
 
     .plan-card-container {
