@@ -72,6 +72,10 @@ main section {
 .ul-container {
     display: flex;
     gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 15px 5px;
+
 }
 
 .ul-container>li {
@@ -393,8 +397,47 @@ td {
     bottom: 40px;
 }
 
+/* footer styles */
+.footer {
+    margin-top: 100px;
+    padding: 50px 230px;
+    background: rgba(255, 255, 255, 0.1);
+}
 
+.fitness-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
 
+.fitness {}
+
+.fitness-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.started-ul-container {
+    margin-top: 40px;
+}
+
+.started-ul-container li {
+    list-style: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.hori {
+    margin-top: 80px;
+    margin-bottom: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-bottom-text{
+    text-align-last: center;
+}
 
 
 /* responsive small device */
@@ -436,7 +479,8 @@ td {
 
     .extra {
         flex-direction: column;
-        padding: 0 20px;
+        gap: 50px;
+        padding: 20px;
         padding-top: 40px;
     }
 
@@ -453,5 +497,14 @@ td {
     .team-card-container {
         grid-template-columns: repeat(1, 1fr);
         margin: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .fitness-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
     }
 }
