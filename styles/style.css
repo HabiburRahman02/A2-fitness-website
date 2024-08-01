@@ -343,7 +343,7 @@ th {
 .field-2-container {
     display: flex;
     justify-content: center;
-    /* width: 59%; */
+    width: 59%;
 }
 
 .field-2-container #gender {
