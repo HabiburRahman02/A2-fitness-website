@@ -177,64 +177,84 @@
         <!-- plan end -->
 
         <!-- bmi start -->
-        <!-- <div class="bmis">
+        <div class="bmis">
             <div class="bmi-content">
-                <h1 class="bmi-content-title">BMI Calculator</h1>
-                <p class="bmi-content-des">We believe fitness should be accessible to everyone, everywhere, regardless
-                    of income or access to a gym.</p>
+                <h1 class="bmi-title">BMI Calculator</h1>
+                <p class="bmi-des text-primary">We believe fitness should be accessible to everyone, everywhere,
+                    regardless of income or access to a gym.</p>
             </div>
-            <div class="bmi">
-                <div class="bmi-main-container">
-                    <div class="bmi-column-cart">
-                        <h2 class="bmi-title">BMI Calculator Chart</h2>
-                        <table class="bmi-table">
-                            <thead>
-                                <tr>
-                                    <th>Bmi</th>
-                                    <th>Weight Status</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-primary">
-                                <tr>
-                                    <td>Below 18.5</td>
-                                    <td>Underweight</td>
-                                </tr>
-                                <tr>
-
-                                    <td>18.5- 24.9</td>
-                                    <td>healthy</td>
-                                </tr>
-                                <tr>
-                                    <td>25.0 - 29.9</td>
-                                    <td>Overweight</td>
-                                </tr>
-                                <tr>
-                                    <td>30.0 - and above</td>
-                                    <td>Obese</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="bmi-column-calculate">
-                        <h2 class="calculate-title">Calculate your BMI</h2>
-                        <p class="calculate-des text-primary">We believe fitness should be accessible to everyone,
-                            everywhere, regardless of income or access to a gym. </p>
-                         <div class="calculate-field-container">
-                            <input class="field" placeholder="something" type="text">
-                            <input class="field" type="text">
-                            <input type="text">
-                         </div>   
+            <div class="bmi-main-container">
+                <div class="chart">
+                    <h2 class="bmi-chart-title">BMI Calculator Chart</h2>
+                    <table class="table">
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr class="text-primary">
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr class="text-primary">
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr class="text-primary">
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr class="text-primary">
+                            <td>30.0 and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="calculate">
+                    <h2 class="bmi-calculate-title">Calculate your BMI</h2>
+                    <p class="bmi-calculate-des text-primary">We believe fitness should be accessible to everyone,
+                        everywhere, regardless of income or access to a gym.</p>
+                    <div class="input-container">
+                        <div class="input-1">
+                            <input type="text" placeholder="Height/cm" class="field">
+                            <input type="text" placeholder="Weight/kg" class="field">
+                        </div>
+                        <div class="input-1">
+                            <input type="text" placeholder="Age" class="field ">
+                            <div class="field-2-container">
+                                <input type="text" id="gender" placeholder="Sex" class="field">
+                                <select class="field" id="sex" name="sex">
+                                    <option value=""></option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-1 ">
+                            <div class="input-3-container">
+                                <input type="text" id="activity-first" placeholder="Sex" class="field">
+                                <select class="field" id="activity-last" name="Select Your activity">
+                                    <option value=""></option>
+                                    <option value="male">Active</option>
+                                    <option value="female">Very Active</option>
+                                    <option value="other">Medium</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn-calculate">Calculate</button>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+        </div>
         <!-- bmi end -->
 
         <!-- team start -->
         <section class="team">
             <div class="team-content">
                 <h1 class="team-title">Meet Our Team</h1>
-                <p class="team-des text-primary">We believe fitness should be accessible to everyone, everywhere, regardless of
+                <p class="team-des text-primary">We believe fitness should be accessible to everyone, everywhere,
+                    regardless of
                     income or access to a gym.</p>
             </div>
             <div class="team-card-container">
