@@ -289,118 +289,90 @@ main section {
 }
 
 .bmi-content {
-    max-width: 650px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 80px;
+    max-width: 670px;
+    margin-bottom: 50px;
 }
 
-.bmi-title {
-    font-weight: 900;
+.bmi-content-title {
     font-size: 3rem;
+    font-weight: 900;
     margin-bottom: 15px;
 }
 
 .bmi-main-container {
     background: rgb(34, 34, 34);
-    padding: 50px 230px;
-    display: flex;
-    gap: 130px;
 }
 
-.bmi-chart-title {
+.bmi-sub-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    gap: 150px;
+}
+
+.chart-title {
     margin-bottom: 50px;
+    font-size: 1.6rem;
     font-weight: 900;
-    font-size: 1.5rem;
 }
 
 .table {
     border-collapse: collapse;
 }
 
-td,
+.table td,
 th {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 15px 50px;
+    padding: 10px 25px;
 }
 
+.calculate-content {
+    max-width: 570px;
+}
 
-.bmi-calculate-title {
+.calculate-title {
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    font-weight: 900;
     margin-bottom: 15px;
 }
 
-.bmi-calculate-des {
-    margin-bottom: 45px;
+.calculate-des {
+    margin-bottom: 35px;
 }
 
-.input-1 {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.field-2-container {
-    display: flex;
-    justify-content: center;
-    width: 59%;
-}
-
-.field-2-container #gender {
-    border-radius: 8px 0px 0px 8px;
-}
-
-#sex {
-    background: rgba(255, 255, 255, 0.1);
-    color: gray;
-    border-radius: 0 8px 8px 0px;
-    border: none;
+.input-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 .field {
-    width: 50%;
-    border-radius: 8px;
     padding: 20px;
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-
-.large-field {
-    width: 100%;
     border-radius: 8px;
-    padding: 20px;
-    border: none;
     background: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-.input-3-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-}
-
-#activity-first {
-    border-radius: 8px 0px 0px 8px;
-}
-
-#activity-last {
-    border-radius: 0px 8px 8px 0px;
+    border: none;
     color: gray;
 }
 
-.btn-calculate {
-    margin-top: 15px;
-    border-radius: 42px;
-    padding: 15px 80px;
-    background: rgb(230, 83, 60);
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: white;
+#select-field {
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
     border: none;
+    color: gray;
+}
+
+#select-field option {
+    background-color: gray;
+    color: white;
+}
+
+.full-width {
+    grid-column: span 2;
 }
 
 /* team styles */
@@ -506,6 +478,7 @@ th {
     .banner-container {
         flex-direction: column;
         align-items: center;
+        gap: 60px;
     }
 
     .videos {
@@ -557,9 +530,25 @@ th {
         gap: 60px;
     }
 
+    .fitness-title {
+        font-size: 3rem;
+    }
+
+    .bmi-content {
+        padding: 0 20px;
+    }
+
     .bmi-main-container {
-        flex-direction: column;
         padding: 10px;
+    }
+
+    .bmi-sub-container {
+        flex-direction: column;
         gap: 50px;
+        padding: 10px;
+    }
+
+    .field {
+        padding: 20px 5px;
     }
 }
