@@ -538,10 +538,6 @@ th {
         padding: 0 20px;
     }
 
-    .bmi-main-container {
-        padding: 10px;
-    }
-
     .bmi-sub-container {
         flex-direction: column;
         gap: 50px;
