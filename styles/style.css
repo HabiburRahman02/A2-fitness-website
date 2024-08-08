@@ -329,7 +329,7 @@ th {
     padding: 10px 25px;
 }
 
-.calculate-content {}
+
 
 .calculate-title {
     margin-bottom: 50px;
@@ -342,9 +342,12 @@ th {
     margin-bottom: 35px;
 }
 
+
+
+
 .input-main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -356,12 +359,8 @@ th {
     color: gray;
 }
 
-#select-field {
-    padding: 20px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: gray;
+.full-width {
+    grid-column: span 2;
 }
 
 #select-field option {
@@ -369,9 +368,6 @@ th {
     color: white;
 }
 
-.full-width {
-    grid-column: span 2;
-}
 
 /* team styles */
 .team-content {
