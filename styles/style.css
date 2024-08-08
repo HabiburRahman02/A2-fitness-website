@@ -368,6 +368,17 @@ th {
     color: white;
 }
 
+.btn-calculate {
+    margin-top: 15px;
+    border-radius: 42px;
+    padding: 15px 80px;
+    background: rgb(230, 83, 60);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
 /* team styles */
 .team-content {
